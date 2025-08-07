@@ -240,7 +240,7 @@ export default function Portfolio() {
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="text-amber-800">{skill.icon}</div>
-                    <h3 className="font-semibold text-gray-800">{skill.name}</h3
+                    <h3 className="font-semibold text-gray-800">{skill.name}</h3>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
                     <div 
