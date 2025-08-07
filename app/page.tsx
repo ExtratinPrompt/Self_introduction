@@ -72,7 +72,7 @@ export default function Portfolio() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-blue-50 to-purple-50">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-stone-50 to-neutral-100">
       {/* Floating particles effect */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         {[...Array(20)].map((_, i) => (
@@ -86,7 +86,7 @@ export default function Portfolio() {
               animationDuration: `${3 + Math.random() * 2}s`
             }}
           >
-            <Sparkles className="w-4 h-4 text-emerald-400" />
+            <Sparkles className="w-4 h-4 text-amber-400" />
           </div>
         ))}
       </div>
@@ -95,7 +95,7 @@ export default function Portfolio() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-white/20">
         <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="font-bold text-xl bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
+            <div className="font-bold text-xl bg-gradient-to-r from-amber-800 to-stone-800 bg-clip-text text-transparent">
               Christine Laput
             </div>
             <div className="hidden md:flex space-x-8">
@@ -105,8 +105,8 @@ export default function Portfolio() {
                   onClick={() => scrollToSection(section)}
                   className={`capitalize transition-colors ${
                     activeSection === section
-                      ? "text-emerald-600 font-semibold"
-                      : "text-gray-600 hover:text-emerald-600"
+                      ? "text-amber-800 font-semibold"
+                      : "text-gray-600 hover:text-amber-800"
                   }`}
                 >
                   {section}
@@ -122,11 +122,11 @@ export default function Portfolio() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className={`space-y-6 transition-all duration-1000 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
             <div className="space-y-2">
-              <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-amber-800 via-stone-800 to-neutral-800 bg-clip-text text-transparent">
                 Christine Praise Laput
               </h1>
               <p className="text-xl text-gray-600">IT Student & Future Developer</p>
-              <div className="flex items-center gap-2 text-emerald-600">
+              <div className="flex items-center gap-2 text-amber-800">
                 <GraduationCap className="w-5 h-5" />
                 <span>New Era University</span>
               </div>
@@ -142,39 +142,39 @@ export default function Portfolio() {
             <div className="flex gap-4">
               <Button 
                 onClick={() => scrollToSection("projects")}
-                className="bg-gradient-to-r from-emerald-500 to-blue-500 hover:from-emerald-600 hover:to-blue-600 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+                className="bg-gradient-to-r from-amber-700 to-stone-700 hover:from-amber-800 hover:to-stone-800 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
               >
                 View My Work
               </Button>
               <Button 
                 variant="outline" 
                 onClick={() => scrollToSection("contact")}
-                className="border-emerald-500 text-emerald-600 hover:bg-emerald-50 px-8 py-3 rounded-full transition-all duration-300"
+                className="border-amber-700 text-amber-800 hover:bg-amber-50 px-8 py-3 rounded-full transition-all duration-300"
               >
                 Get In Touch
               </Button>
             </div>
             <div className="flex gap-4 pt-4">
-              <Button variant="ghost" size="icon" className="hover:text-emerald-600 transition-colors">
+              <Button variant="ghost" size="icon" className="hover:text-amber-800 transition-colors">
                 <Github className="w-5 h-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="hover:text-emerald-600 transition-colors">
+              <Button variant="ghost" size="icon" className="hover:text-amber-800 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="hover:text-emerald-600 transition-colors">
+              <Button variant="ghost" size="icon" className="hover:text-amber-800 transition-colors">
                 <Mail className="w-5 h-5" />
               </Button>
             </div>
           </div>
           <div className={`relative transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}>
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-blue-400 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-stone-400 rounded-full blur-3xl opacity-20 animate-pulse"></div>
               <Image
-                src="/placeholder.svg?height=400&width=400"
-                alt="Studio Ghibli Character"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/empink.jpg-RQUZLecqu98qtttSdOmbR7axzsGKXJ.jpeg"
+                alt="Christine Praise Laput - IT Student"
                 width={400}
                 height={400}
-                className="relative z-10 rounded-full shadow-2xl animate-float"
+                className="relative z-10 rounded-full shadow-2xl animate-float object-cover"
               />
               <div className="absolute -top-4 -right-4 z-20">
                 <div className="bg-yellow-400 rounded-full p-2 animate-bounce">
@@ -189,7 +189,7 @@ export default function Portfolio() {
       {/* About Section */}
       <section id="about" className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-amber-800 to-stone-800 bg-clip-text text-transparent">
             About Me
           </h2>
           <Card className="bg-white/60 backdrop-blur-sm border-white/20 shadow-xl">
@@ -216,10 +216,10 @@ export default function Portfolio() {
                     that are not only functional but also bring joy to users.
                   </p>
                   <div className="flex flex-wrap gap-2 pt-4">
-                    <Badge variant="secondary" className="bg-emerald-100 text-emerald-700">Problem Solver</Badge>
-                    <Badge variant="secondary" className="bg-blue-100 text-blue-700">Creative Thinker</Badge>
-                    <Badge variant="secondary" className="bg-purple-100 text-purple-700">Team Player</Badge>
-                    <Badge variant="secondary" className="bg-pink-100 text-pink-700">Lifelong Learner</Badge>
+                    <Badge variant="secondary" className="bg-amber-100 text-amber-800">Problem Solver</Badge>
+                    <Badge variant="secondary" className="bg-stone-100 text-stone-800">Creative Thinker</Badge>
+                    <Badge variant="secondary" className="bg-neutral-100 text-neutral-800">Team Player</Badge>
+                    <Badge variant="secondary" className="bg-amber-50 text-amber-700">Lifelong Learner</Badge>
                   </div>
                 </div>
               </div>
@@ -231,7 +231,7 @@ export default function Portfolio() {
       {/* Skills Section */}
       <section id="skills" className="py-20 px-4 bg-white/30">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-amber-800 to-stone-800 bg-clip-text text-transparent">
             Skills & Technologies
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
@@ -239,12 +239,12 @@ export default function Portfolio() {
               <Card key={skill.name} className="bg-white/60 backdrop-blur-sm border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="text-emerald-600">{skill.icon}</div>
-                    <h3 className="font-semibold text-gray-800">{skill.name}</h3>
+                    <div className="text-amber-800">{skill.icon}</div>
+                    <h3 className="font-semibold text-gray-800">{skill.name}</h3
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
                     <div 
-                      className="bg-gradient-to-r from-emerald-500 to-blue-500 h-2 rounded-full transition-all duration-1000 ease-out"
+                      className="bg-gradient-to-r from-amber-600 to-stone-600 h-2 rounded-full transition-all duration-1000 ease-out"
                       style={{ 
                         width: `${skill.level}%`,
                         animationDelay: `${index * 0.1}s`
@@ -262,7 +262,7 @@ export default function Portfolio() {
       {/* Projects Section */}
       <section id="projects" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-amber-800 to-stone-800 bg-clip-text text-transparent">
             Featured Projects
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -290,7 +290,7 @@ export default function Portfolio() {
                       </Badge>
                     ))}
                   </div>
-                  <Button variant="outline" className="w-full group-hover:bg-emerald-50 group-hover:border-emerald-500 transition-colors">
+                  <Button variant="outline" className="w-full group-hover:bg-amber-50 group-hover:border-amber-700 transition-colors">
                     View Project
                   </Button>
                 </CardContent>
@@ -301,9 +301,9 @@ export default function Portfolio() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-4 bg-gradient-to-r from-emerald-50 to-blue-50">
+      <section id="contact" className="py-20 px-4 bg-gradient-to-r from-amber-50 to-stone-50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-amber-800 to-stone-800 bg-clip-text text-transparent">
             Let's Create Something Magical Together
           </h2>
           <div className="mb-8">
@@ -320,15 +320,15 @@ export default function Portfolio() {
             a passion for technology and creativity. Let's bring your ideas to life!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button className="bg-gradient-to-r from-emerald-500 to-blue-500 hover:from-emerald-600 hover:to-blue-600 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
+            <Button className="bg-gradient-to-r from-amber-700 to-stone-700 hover:from-amber-800 hover:to-stone-800 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
               <Mail className="w-5 h-5 mr-2" />
               christine.laput@email.com
             </Button>
             <div className="flex gap-4">
-              <Button variant="outline" size="icon" className="rounded-full hover:bg-emerald-50 hover:border-emerald-500 transition-colors">
+              <Button variant="outline" size="icon" className="rounded-full hover:bg-amber-50 hover:border-amber-700 transition-colors">
                 <Github className="w-5 h-5" />
               </Button>
-              <Button variant="outline" size="icon" className="rounded-full hover:bg-emerald-50 hover:border-emerald-500 transition-colors">
+              <Button variant="outline" size="icon" className="rounded-full hover:bg-amber-50 hover:border-amber-700 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </Button>
             </div>
